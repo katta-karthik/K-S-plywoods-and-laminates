@@ -7,8 +7,6 @@ export default function FloatingContact() {
   return (
     <div
       className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[90] flex flex-col items-end gap-3"
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
     >
       <AnimatePresence>
         {isOpen && (
@@ -48,6 +46,7 @@ export default function FloatingContact() {
 
       {/* Main Trigger Button */}
       <motion.button
+        onClick={() => setIsOpen(!isOpen)}
         className="relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300"
         style={{ background: 'linear-gradient(135deg, #c9a96e, #e8c98a)' }}
         initial={{ scale: 0, opacity: 0 }}
@@ -56,10 +55,31 @@ export default function FloatingContact() {
       >
         <span className="absolute inset-0 rounded-full animate-ping opacity-30" style={{ backgroundColor: '#c9a96e' }}></span>
         
-        {/* Contact/Message Icon */}
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0c0805" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10">
-          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-        </svg>
+        {/* Contact/Message Icon / Close Icon */}
+        <AnimatePresence mode="wait">
+          {!isOpen ? (
+            <motion.svg
+              key="chat"
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
+              xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0c0805" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10"
+            >
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </motion.svg>
+          ) : (
+            <motion.svg
+              key="close"
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
+              xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0c0805" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </motion.svg>
+          )}
+        </AnimatePresence>
       </motion.button>
     </div>
   );
