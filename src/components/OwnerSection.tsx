@@ -73,7 +73,7 @@ export default function OwnerSection() {
                 style={{ transformOrigin: 'right' }}
               />
               <motion.img
-                src="/images/owner-portrait.jpg"
+                src="images/owner-portrait.jpg"
                 alt="K. Srinivasarao – Founder"
                 className="w-full object-cover"
                 style={{

@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
         <div
           className="absolute inset-0 opacity-5"
           style={{
-            backgroundImage: "url('/images/wood-texture.jpg')",
+            backgroundImage: "url('images/wood-texture.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

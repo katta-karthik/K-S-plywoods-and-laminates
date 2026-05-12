@@ -147,7 +147,7 @@ export default function Navbar() {
             <div
               className="absolute inset-0 opacity-5"
               style={{
-                backgroundImage: `url('/images/wood-texture.jpg')`,
+                backgroundImage: `url('images/wood-texture.jpg')`,
                 backgroundSize: 'cover',
               }}
             />

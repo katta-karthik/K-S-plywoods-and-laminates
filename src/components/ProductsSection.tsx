@@ -7,7 +7,7 @@ const products = [
     category: 'Decorative Laminates',
     description:
       'Rich patterns and textures for sophisticated wall cladding, furniture surfaces, and cabinetry.',
-    image: '/images/laminate-1.jpg',
+    image: 'images/laminate-1.jpg',
     accent: '#c9a96e',
     number: '01',
     tag: 'Bestseller',
@@ -17,7 +17,7 @@ const products = [
     category: 'Premium Plywood',
     description:
       'High-grade marine and commercial ply for structural and decorative applications requiring strength and beauty.',
-    image: '/images/laminate-2.jpg',
+    image: 'images/laminate-2.jpg',
     accent: '#c9a96e',
     number: '02',
     tag: 'Premium',
@@ -27,7 +27,7 @@ const products = [
     category: 'Matte Finish Laminates',
     description:
       'Ultra-smooth matte surfaces delivering a refined, contemporary aesthetic for modern homes and offices.',
-    image: '/images/laminate-3.jpg',
+    image: 'images/laminate-3.jpg',
     accent: '#c9a96e',
     number: '03',
     tag: 'Trending',
@@ -37,7 +37,7 @@ const products = [
     category: 'Glossy Laminates',
     description:
       'High-gloss surfaces that reflect light beautifully, adding depth and luminosity to any space.',
-    image: '/images/laminate-glossy.jpg',
+    image: 'images/laminate-glossy.jpg',
     accent: '#c9a96e',
     number: '04',
     tag: 'New',
@@ -47,7 +47,7 @@ const products = [
     category: 'Wooden Textures',
     description:
       'Authentic wood-grain reproductions offering natural warmth without compromise on durability.',
-    image: '/images/wood-texture.jpg',
+    image: 'images/wood-texture.jpg',
     accent: '#c9a96e',
     number: '05',
     tag: 'Classic',
@@ -57,7 +57,7 @@ const products = [
     category: 'Designer Panels',
     description:
       'Exclusive designer panel collections for custom carpentry and structural installations.',
-    image: '/images/gallery-1.jpg',
+    image: 'images/gallery-1.jpg',
     accent: '#c9a96e',
     number: '06',
     tag: 'Exclusive',

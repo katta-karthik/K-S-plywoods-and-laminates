@@ -49,7 +49,7 @@ export default function HeroSection() {
           transition={{ duration: 2, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <img
-            src="/images/hero-bg.jpg"
+            src="images/hero-bg.jpg"
             alt="Premium Plywood and Laminates"
             className="w-full h-full object-cover"
             style={{ opacity: 0.45 }}
@@ -76,7 +76,7 @@ export default function HeroSection() {
         <div
           className="absolute right-0 top-0 w-1/3 h-full opacity-10"
           style={{
-            backgroundImage: "url('/images/wood-texture.jpg')",
+            backgroundImage: "url('images/wood-texture.jpg')",
             backgroundSize: 'cover',
             maskImage: 'linear-gradient(to left, rgba(0,0,0,0.8), transparent)',
             WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,0.8), transparent)',

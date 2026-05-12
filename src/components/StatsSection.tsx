@@ -26,7 +26,7 @@ export default function StatsSection() {
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: "url('/images/wood-texture.jpg')",
+          backgroundImage: "url('images/wood-texture.jpg')",
           backgroundSize: 'cover',
         }}
       />
